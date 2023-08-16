@@ -23,13 +23,13 @@
     <script type='text/javascript' src='js/slick.min.js'></script>
 </head>
 
-<body class="home page-template page-template-tmpl-frontpage page-template-tmpl-frontpage-php page page-id-6">
+<body class="home page-template page-template-tmpl-frontpage page-template-tmpl-frontpage-php page page-id-6" style="color: burlywood;">
     <div class="contact-video"></div>
-    <div id="page" class="site">
+    <div id="page" class="site" style="color: burlywood;">
         <header id="masthead" class="site-header">
-            <div class="container main-header-container">
+            <div class="container main-header-container" style="color: burlywood;">
                 <div class="site-branding">
-                    <a href="index.html" class="logo-link" rel="home" target="_self"><img src="images/cropped-index-1.png" alt="logo" /></a>
+                    <a href="index.html" class="logo-link" rel="home" target="_self"><img src="images/large-honey-removebg-preview.png" alt="logo"/></a>
                     <p class="site-title"><a href="index.html" rel="home"></a></p>
                 </div>
 
@@ -39,7 +39,6 @@
                         <li class="menu-item"><a href="#meetchef">apiary</a></li>
                         <li class="menu-item"><a href="#blog">read blog</a></li>
                         <li class="menu-item"><a href="#gallery">gallery</a></li>
-                        <li class="menu-item"><a href="#testimonials">testimonials</a></li>
                         <li class="menu-item"><a href="#contact">contact</a></li>
                     </ul>
                 </nav>
@@ -55,19 +54,20 @@
 
             <div id="primary" class="content-area front-page-content-area">
                 <main id="main" class="site-main">
-                    <section id="banner" class="section banner-section" data-eltype="frontpagesection" style="background-image:url(images/bg-1.jpg);">
-                        <div class="container section-inner">
-                            <div class="section-body">
-                                <div class="section-header">
-                                    <div class="section-title">
-                                        <p>Tasteiest and Mouth Watering Menus in New York</p>
-                                    </div>
-                                    <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipi scing elit, Lorem ipsum dolor sit amet, consectetur do eiusmod tempor incididunt ut labore et dolore...
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
+                <section id="banner" class="section banner-section" data-eltype="frontpagesection" style="background-image: url(images/IMG_1632.jpeg); position: relative;">
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);"></div>
+    <div class="container section-inner">
+        <div class="section-body">
+            <div class="section-header">
+                <div class="section-title" style="color: white; font-size: 40px; font-weight: bold;">
+                    <p>Harvesting Nature's Bounty: Nectar to Your Doorstep Through HiveToHome :)</p>
+                </div>
+                <p class="section-subtitle" style="color: white; font-size: 25px; font-weight: bold;">Discover the symphony of flavors in our HiveToHome: Honey Order and Apiary Management System. Order nature's liquid gold effortlessly while exploring advanced apiary management tools.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
                     <section id="introduce" class="section introduce-section" data-eltype="frontpagesection">
                         <div class="container section-inner">
                             <div class="section-header bigsub">
