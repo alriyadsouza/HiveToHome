@@ -493,12 +493,12 @@
                                         <div class="section-body">
                                             <div class="section-header">
                                                 <div class="section-title">
-                                                    <p>About Oakwood</p>
+                                                    <p>About HomeToHive</p>
                                                 </div>
                                             </div>
                                             <div class="section-content" id="slide-meetour">
                                                 <div class="section-about">
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do eiusmod tempor incididunt ut labore et dolore morbvi Lorem ipsum dolor sit amet, adipiscing eiusmod tempor incididunt ut labore et dolore morbvi Lorem ipsum consectetur adipiscing eliturna. do eiusmorbi Lorem ipsum dolor sit</p>
+                                                    <p>"Home To Hive is an online platform for easy honey ordering and efficient apiary management. It offers customers a seamless way to buy honey products. Home To Hive offers a user-friendly interface that facilitates the seamless purchase of high-quality honey products.It not only revolutionizes the honey ordering process but also fosters a sense of community among apiarists and honey enthusiasts</p>
                                                 </div>
                                                 <a href="#" class="about-link" rel="about" target="_blank">Read More</a><span>...</span>
                                             </div>
