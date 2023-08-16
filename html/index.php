@@ -115,7 +115,7 @@
                                     <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 menu-grid">
                                         <div class="menu-img">
                                             <div class="menu-block has-post-thumbnail">
-                                                <div class="entry-thumbnail"><img width="330" height="331" src="images/3.jpg" class="attachment-full size-full wp-post-image" alt="" /></div>
+                                                <div class="entry-thumbnail"><img width="330" height="331" src="images/3a.png" class="attachment-full size-full wp-post-image" alt="" /></div>
                                             </div>
                                         </div>
                                         <div class="menu-grid-col">
@@ -125,7 +125,7 @@
                                     <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 menu-grid">
                                         <div class="menu-img">
                                             <div class="menu-block has-post-thumbnail">
-                                                <div class="entry-thumbnail"><img width="330" height="331" src="images/4.jpg" class="attachment-full size-full wp-post-image" alt="" /></div>
+                                                <div class="entry-thumbnail"><img width="330" height="331" src="images/4a.png" class="attachment-full size-full wp-post-image" alt="" /></div>
                                             </div>
                                         </div>
                                         <div class="menu-grid-col">
@@ -135,7 +135,7 @@
                                     <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 menu-grid">
                                         <div class="menu-img">
                                             <div class="menu-block has-post-thumbnail">
-                                                <div class="entry-thumbnail"><img width="330" height="331" src="images/5.jpg" class="attachment-full size-full wp-post-image" alt="" /></div>
+                                                <div class="entry-thumbnail"><img width="330" height="331" src="images/5a.png" class="attachment-full size-full wp-post-image" alt="" /></div>
                                             </div>
                                         </div>
                                         <div class="menu-grid-col">
@@ -145,7 +145,7 @@
                                     <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 menu-grid">
                                         <div class="menu-img">
                                             <div class="menu-block has-post-thumbnail">
-                                                <div class="entry-thumbnail"><img width="329" height="331" src="images/6.jpg" class="attachment-full size-full wp-post-image" alt="" /></div>
+                                                <div class="entry-thumbnail"><img width="329" height="331" src="images/6a.jpg" class="attachment-full size-full wp-post-image" alt="" /></div>
                                             </div>
                                         </div>
                                         <div class="menu-grid-col">
