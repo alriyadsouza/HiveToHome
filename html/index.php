@@ -103,10 +103,10 @@
                                 </div>
                                 <div class="row">
                                     <div class="section-subtitle col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do eiusmod tempor incididunt ut labore et dolore morbi Lorem ipsum dolor sit amet adipiscing.</p>
+                                        <p>Discover the pure essence of nature with our exquisite honey collection. Sourced from the most pristine landscapes, our honey captures the unique flavors of various blossoms and blooms. From the delicate sweetness of wildflowers to the robust richness of forest nectar, each jar tells a story of the bees' tireless work and the land's bounty.</p>
                                     </div>
                                     <div class="section-subtitle col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do eiusmod tempor incididunt ut labore et dolore morbi Lorem ipsum dolor sit amet adipiscing.</p>
+                                        <p>Whether drizzled over warm pastries or paired with artisan cheeses, our honey brings a touch of natural luxury to your table, inviting you to experience the unparalleled taste of the wilderness in every golden drop.</p>
                                     </div>
                                 </div>
                             </div>
