@@ -448,10 +448,10 @@
                                     <div class="section-body">
                                         <div class="section-header">
                                             <div class="section-title">
-                                                <p>Subscribe to Newsletter</p>
+                                                <p>Write A Review</p>
                                             </div>
                                             <div class="section-content">
-                                                <p>“Lorem ipsum dolor sit amet, consect etur adipi scing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing eliturna morbi Lorem...”</p>
+                                                <p>Step into the HiveToHome review realm, where your feedback crafts a honeyed narrative. Your words, like bees to blossoms, help us curate excellence for your doorstep. Share your story, enrich our hive.</p>
                                             </div>
                                         </div>
                                         <div class="newsletter-col">
@@ -460,15 +460,15 @@
                                                 <form class="wpcf7-form">
                                                     <div class="c-cot-1">
                                                         <span class="wpcf7-form-control-wrap your-name">
-                                                            <input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Your Name" required />
+                                                            <input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Rating(/10)" required />
                                                         </span>
                                                     </div>
                                                     <div class="c-cot-2">
                                                         <span class="wpcf7-form-control-wrap your-email">
-                                                            <input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Your Email Address" required />
+                                                            <input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Comment" required />
                                                         </span>
                                                     </div>
-                                                    <div class="c-cot-3"><input type="submit" value="Subscribe" class="wpcf7-form-control wpcf7-submit" /></div>
+                                                    <div class="c-cot-3"><input type="submit" value="Review" class="wpcf7-form-control wpcf7-submit" /></div>
                                                     <div class="wpcf7-response-output wpcf7-display-none"></div>
                                                     <p style="display: none !important">
                                                         <span class="wpcf7-form-control-wrap referer-page">
@@ -492,12 +492,12 @@
                                         <div class="section-body">
                                             <div class="section-header">
                                                 <div class="section-title">
-                                                    <p>About HomeToHive</p>
+                                                    <p>About HiveToHome</p>
                                                 </div>
                                             </div>
                                             <div class="section-content" id="slide-meetour">
                                                 <div class="section-about">
-                                                    <p>"Home To Hive is an online platform for easy honey ordering and efficient apiary management. It offers customers a seamless way to buy honey products. Home To Hive offers a user-friendly interface that facilitates the seamless purchase of high-quality honey products.It not only revolutionizes the honey ordering process but also fosters a sense of community among apiarists and honey enthusiasts</p>
+                                                    <p>"Hive To Home is an online platform for easy honey ordering and efficient apiary management. It offers customers a seamless way to buy honey products. Home To Hive offers a user-friendly interface that facilitates the seamless purchase of high-quality honey products.It not only revolutionizes the honey ordering process but also fosters a sense of community among apiarists and honey enthusiasts</p>
                                                 </div>
                                                 <a href="#" class="about-link" rel="about" target="_blank">Read More</a><span>...</span>
                                             </div>
