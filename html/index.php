@@ -55,19 +55,18 @@
             <div id="primary" class="content-area front-page-content-area">
                 <main id="main" class="site-main">
                 <section id="banner" class="section banner-section" data-eltype="frontpagesection" style="background-image: url(images/IMG_1632.jpeg); position: relative;">
-    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);"></div>
-    <div class="container section-inner">
-        <div class="section-body">
-            <div class="section-header">
-                <div class="section-title" style="color: white; font-size: 40px; font-weight: bold;">
-                    <p>Harvesting Nature's Bounty: Nectar to Your Doorstep Through HiveToHome :)</p>
-                </div>
-                <p class="section-subtitle" style="color: white; font-size: 25px; font-weight: bold;">Discover the symphony of flavors in our HiveToHome: Honey Order and Apiary Management System. Order nature's liquid gold effortlessly while exploring advanced apiary management tools.
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
+                    <div class="container section-inner">
+                        <div class="section-body">
+                            <div class="section-header">
+                                <div class="section-title" style="color: white; font-size: 40px; font-weight: bold;">
+                                    <p>Harvesting Nature's Bounty: Nectar to Your Doorstep Through HiveToHome :)</p>
+                                </div>
+                                <p class="section-subtitle" style="color: white; font-size: 25px; font-weight: bold;">Discover the symphony of flavors in our HiveToHome: Honey Order and Apiary Management System. Order nature's liquid gold effortlessly while exploring advanced apiary management tools.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
                     <section id="introduce" class="section introduce-section" data-eltype="frontpagesection">
                         <div class="container section-inner">
                             <div class="section-header bigsub">
@@ -210,11 +209,11 @@
                                         <div class="meetchef-grid-col col-xs-12 col-sm-12 col-md-4 col-lg-4">
                                             <div class="blog-img">
                                                 <div class="blog-block has-post-thumbnail">
-                                                    <div class="entry-thumbnail"><img width="423" height="362" src="images/apiary3.webp" class="attachment-full size-full wp-post-image" alt="" /></div>
+                                                    <div class="entry-thumbnail"><img width="423" height="362" src="images/apiary4.jpg" class="attachment-full size-full wp-post-image" alt="" /></div>
                                                 </div>
                                             </div>
                                             <div class="entry-body">
-                                                <h4 class="entry-title">Inzerki Apiary</h4>
+                                                <h6 class="entry-title">Inzerki Apiary</h6>
                                                 <div class="entry-position">Agadir, Morocco </div>
                                                 <p>The Inzerki Apiary in the Souss-Massa region 82 kilometers north of Agadir is the largest traditional collective apiary, or bee yard, in the world. The population living around the apiary is only in 100s, and most of them are beekeepers.</p>
                                                 <ul>
@@ -234,7 +233,7 @@
                                                 </div>
                                             </div>
                                             <div class="entry-body">
-                                                <h4 class="entry-title">Rock Hill Honey Bee Farm</h4>
+                                                <h6 class="entry-title">Rock Hill Honey Bee Farm</h6>
                                                 <div class="entry-position">Stafford, VA</div>
                                                 <p>Their farm sits on five acres of land, and their staff takes great pride in caring for the bees, offering advice and assistance, and providing the highest quality products.</p>
                                                 <ul>
@@ -248,11 +247,11 @@
                                         <div class="meetchef-grid-col col-xs-12 col-sm-12 col-md-4 col-lg-4">
                                             <div class="blog-img">
                                                 <div class="blog-block has-post-thumbnail">
-                                                    <div class="entry-thumbnail"><img width="423" height="362" src="images/7.jpg" class="attachment-full size-full wp-post-image" alt="" /></div>
+                                                    <div class="entry-thumbnail"><img width="423" height="362" src="images/apiary6.jpg" class="attachment-full size-full wp-post-image" alt="" /></div>
                                                 </div>
                                             </div>
                                             <div class="entry-body">
-                                                <h4 class="entry-title">Kashmir Apiaries Exports</h4>
+                                                <h6 class="entry-title">Kashmir Apiaries Exports</h6>
                                                 <div class="entry-position">Doraha, Ludhiana, India</div>
                                                 <p>Kashmir Apiaries has 50,000 bee colonies across India. It is considered the largest exporter in the country and supplies to a good number of nations around the globe. </p>
                                                 <ul>
