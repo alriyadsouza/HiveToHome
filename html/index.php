@@ -83,13 +83,13 @@
                                 </div>
                                 <div class="section-header col-xs-12 col-sm-12 col-md-6 col-lg-6">
                                     <div class="section-title">
-                                        <p>Harvesting Nature's Sweetness, Bottled for You.</p>
+                                        <p>Sweetness Bottled for You!</p>
                                     </div>
                                     <div class="section-subtitle">
                                         <p>Embark on a journey of exquisite flavors with HiveToHome's pure, organic honey collection. Our commitment to quality ensures that every jar encapsulates the rich essence of nature's wonder.</p>
-                                        <p> Elevate your culinary experiences and enjoy the wholesome goodness that only HiveToHome can deliver. Your palate awaits – select your jar before you go!</p>
+                                        <p>Your palate awaits – select your jar before you go!</p>
                                     </div>
-                                    <button class="btn-link"><a href="#" target="_self">Order Now</a></button>
+                                    <button class="btn-link"><a href="order.php" target="_self">Order Now</a></button>
                                 </div>
                             </div>
                         </div>
@@ -118,7 +118,7 @@
                                             </div>
                                         </div>
                                         <div class="menu-grid-col">
-                                            <div class="entry-body"><button class="entry-title"><a href="#" rel="bookmark">Appetizers</a></button></div>
+                                            <div class="entry-body"><button class="entry-title"><a href="#" rel="bookmark">Clover Honey</a></button></div>
                                         </div>
                                     </div>
                                     <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 menu-grid">
@@ -128,7 +128,7 @@
                                             </div>
                                         </div>
                                         <div class="menu-grid-col">
-                                            <div class="entry-body"><button class="entry-title"><a href="#" rel="bookmark">Salads</a></button></div>
+                                            <div class="entry-body"><button class="entry-title"><a href="#" rel="bookmark">Acacia Honey</a></button></div>
                                         </div>
                                     </div>
                                     <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 menu-grid">
@@ -138,7 +138,7 @@
                                             </div>
                                         </div>
                                         <div class="menu-grid-col">
-                                            <div class="entry-body"><button class="entry-title"><a href="#" rel="bookmark">Main Courses</a></button></div>
+                                            <div class="entry-body"><button class="entry-title"><a href="#" rel="bookmark">Dandelion Honey</a></button></div>
                                         </div>
                                     </div>
                                     <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 menu-grid">
@@ -148,7 +148,7 @@
                                             </div>
                                         </div>
                                         <div class="menu-grid-col">
-                                            <div class="entry-body"><button class="entry-title"><a href="#" rel="bookmark">Drinks</a></button></div>
+                                            <div class="entry-body"><button class="entry-title"><a href="#" rel="bookmark">Linden Honey</a></button></div>
                                         </div>
                                     </div>
                                     <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 menu-grid">
@@ -158,7 +158,7 @@
                                             </div>
                                         </div>
                                         <div class="menu-grid-col">
-                                            <div class="entry-body"><button class="entry-title"><a href="#" rel="bookmark">Main Courses</a></button></div>
+                                            <div class="entry-body"><button class="entry-title"><a href="#" rel="bookmark">Orange Blossom Honey</a></button></div>
                                         </div>
                                     </div>
                                     <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 menu-grid">
@@ -168,7 +168,7 @@
                                             </div>
                                         </div>
                                         <div class="menu-grid-col">
-                                            <div class="entry-body"><button class="entry-title"><a href="#" rel="bookmark">Salads</a></button></div>
+                                            <div class="entry-body"><button class="entry-title"><a href="#" rel="bookmark">Wildflower Honey</a></button></div>
                                         </div>
                                     </div>
                                     <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 menu-grid">
@@ -178,7 +178,7 @@
                                             </div>
                                         </div>
                                         <div class="menu-grid-col">
-                                            <div class="entry-body"><button class="entry-title"><a href="#" rel="bookmark">Drinks</a></button></div>
+                                            <div class="entry-body"><button class="entry-title"><a href="#" rel="bookmark">Buckwheat honey</a></button></div>
                                         </div>
                                     </div>
                                     <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 menu-grid">
@@ -188,7 +188,7 @@
                                             </div>
                                         </div>
                                         <div class="menu-grid-col">
-                                            <div class="entry-body"><button class="entry-title"><a href="#" rel="bookmark">Appetizers</a></button></div>
+                                            <div class="entry-body"><button class="entry-title"><a href="#" rel="bookmark">Sage honey</a></button></div>
                                         </div>
                                     </div>
                                 </div>
