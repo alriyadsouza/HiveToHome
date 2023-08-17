@@ -530,27 +530,8 @@
                             </div>
                         </div>
                     </section>
-                    <section id="gallery" class="section gallery-section" data-eltype="frontpagesection">
-                        <div class="section-inner">
-                            <div class="box-insta">
-                                <div class="instagram-wcol">
-                                    <div class="widget widget_qasa_instagram">
-                                        <div class="section-header">
-                                            <div class="section-title">Check Instagram Feed</div>
-                                        </div>
-                                        <div class="qasa-insta-images qasa-insta-images-c3">
-                                            <div class="image"><a href="https://www.instagram.com/" target="_blank"><img src="images/inst-1.jpg" alt="" title="" /></a></div>
-                                            <div class="image"><a href="https://www.instagram.com/" target="_blank"><img src="images/inst-2.jpg" alt="" title="" /></a></div>
-                                            <div class="image"><a href="https://www.instagram.com/" target="_blank"><img src="images/inst-3.jpg" alt="" title="" /></a></div>
-                                            <div class="image"><a href="https://www.instagram.com/" target="_blank"><img src="images/inst-4.jpg" alt="" title="" /></a></div>
-                                            <div class="image"><a href="https://www.instagram.com/" target="_blank"><img src="images/inst-5.jpg" alt="" title="" /></a></div>
-                                            <div class="image"><a href="https://www.instagram.com/" target="_blank"><img src="images/inst-6.jpg" alt="" title="" /></a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
+                    <br>
+                    <br>
                 </main>
             </div>
         </div>
