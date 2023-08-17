@@ -1,3 +1,16 @@
+<?php 
+  session_start(); 
+
+  if (!isset($_SESSION['username'])) {
+  	$_SESSION['msg'] = "You must log in first";
+  	header('location: login.php');
+  }
+  if (isset($_GET['logout'])) {
+  	session_destroy();
+  	unset($_SESSION['username']);
+  	header("location: login.php");
+  }
+?>
 <!doctype html>
 <html lang="en-US">
 
@@ -23,11 +36,13 @@
     <script type='text/javascript' src='js/slick.min.js'></script>
     <title>Popup Login and Signup Forms</title>
     <style>
-        /* Style for the faded background */
+        /* ... (your existing styles) ... */
+
+        /* Style for the overlay (faded background) */
         .overlay {
             display: none;
-            position: fixed;
-            top: 0;
+            position:absolute;
+            top: 100;
             left: 0;
             width: 100%;
             height: 100%;
@@ -38,20 +53,42 @@
         /* Style for the popup */
         .popup {
             display: none;
-            position: fixed;
-            top: 50%;
+            position:absolute;
+            top: 100%;
             left: 50%;
             transform: translate(-50%, -50%);
             padding: 20px;
             background-color: #fff;
             border: 1px solid #ccc;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            z-index: 2;
+            z-index: 8;
+            width: 80%; /* Adjust the width as needed */
+            max-width: 400px; /* Set a maximum width for the popup */
         }
     </style>
+
 </head>
 
 <body class="home page-template page-template-tmpl-frontpage page-template-tmpl-frontpage-php page page-id-6" style="color: burlywood;">
+    <div class="content">
+        <!-- notification message -->
+        <?php if (isset($_SESSION['success'])) : ?>
+        <div class="error success" >
+            <h3>
+            <?php 
+                echo $_SESSION['success']; 
+                unset($_SESSION['success']);
+            ?>
+            </h3>
+        </div>
+        <?php endif ?>
+
+        <!-- logged in user information -->
+        <?php  if (isset($_SESSION['username'])) : ?>
+            <p>Welcome <strong><?php echo $_SESSION['username']; ?></strong></p>
+            <p> <a href="index.php?logout='1'" style="color: red;">logout</a> </p>
+        <?php endif ?>
+    </div>
     <div class="contact-video"></div>
     <div id="page" class="site" style="color: burlywood;">
         <header id="masthead" class="site-header">
@@ -68,13 +105,13 @@
                         <li class="menu-item"><a href="#blog">read blog</a></li>
                         <li class="menu-item"><a href="#gallery">gallery</a></li>
                         <li class="menu-item"><a href="#contact">contact</a></li>
-                        <button id="loginButton">Login</button>
-                        <button id="signupButton">Sign Up</button>
+                        <li button id="loginButton">Login</button></li>
+                        <li button id="signupButton">Sign Up</button></li>
 
                     </ul>
                     <div class="overlay" id="overlay"></div>
 
-    <div id="loginPopup" class="popup">
+                    <div id="loginPopup" class="popup">
         <h2>Login</h2>
         <form>
             <label for="loginUsername">Username:</label>
@@ -93,20 +130,21 @@
 
     <div id="signupPopup" class="popup">
         <h2>Sign Up</h2>
-        <form>
+        <form action="signup.php" method="post">
             <label for="signupUsername">Username:</label>
-            <input type="text" id="signupUsername" name="signupUsername"><br><br>
+            <input type="text" id="signupUsername" name="username"><br><br>
             
             <label for="signupEmail">Email:</label>
-            <input type="email" id="signupEmail" name="signupEmail"><br><br>
+            <input type="email" id="signupEmail" name="email"><br><br>
             
             <label for="signupPassword">Password:</label>
-            <input type="password" id="signupPassword" name="signupPassword"><br><br>
+            <input type="password" id="signupPassword" name="password"><br><br>
             
-            <button type="submit">Sign Up</button>
+            <button type="submit" name="submit">Sign Up</button>
         </form>
         <button id="closeSignupPopup">Close</button>
     </div>
+
 
     <script>
         // Get references to the buttons and popup elements
