@@ -79,7 +79,7 @@
                             </div>
                             <div class="section-content row">
                                 <div class="img-border col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                    <img src="images/1.jpg" alt=""> <img src="images/2.jpg" alt="">
+                                    <img src="images/haney-bottle2.jpeg" alt=""> <img src="images/honey-bottle3.jpeg" alt="">
                                     <div class="border-deflection"></div>
                                 </div>
                                 <div class="section-header col-xs-12 col-sm-12 col-md-6 col-lg-6">
