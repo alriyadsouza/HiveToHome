@@ -115,7 +115,7 @@
                                     <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 menu-grid">
                                         <div class="menu-img">
                                             <div class="menu-block has-post-thumbnail">
-                                                <div class="entry-thumbnail"><img width="330" height="331" src="images/3a.png" class="attachment-full size-full wp-post-image" alt="" /></div>
+                                                <div class="entry-thumbnail"><img width="330" height="331" src="images/h5.jpeg" class="attachment-full size-full wp-post-image" alt="" /></div>
                                             </div>
                                         </div>
                                         <div class="menu-grid-col">
@@ -125,7 +125,7 @@
                                     <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 menu-grid">
                                         <div class="menu-img">
                                             <div class="menu-block has-post-thumbnail">
-                                                <div class="entry-thumbnail"><img width="330" height="331" src="images/4a.png" class="attachment-full size-full wp-post-image" alt="" /></div>
+                                                <div class="entry-thumbnail"><img width="330" height="331" src="images/h6.jpeg" class="attachment-full size-full wp-post-image" alt="" /></div>
                                             </div>
                                         </div>
                                         <div class="menu-grid-col">
@@ -135,7 +135,7 @@
                                     <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 menu-grid">
                                         <div class="menu-img">
                                             <div class="menu-block has-post-thumbnail">
-                                                <div class="entry-thumbnail"><img width="330" height="331" src="images/5a.png" class="attachment-full size-full wp-post-image" alt="" /></div>
+                                                <div class="entry-thumbnail"><img width="330" height="331" src="images/h8.webp" class="attachment-full size-full wp-post-image" alt="" /></div>
                                             </div>
                                         </div>
                                         <div class="menu-grid-col">
@@ -145,7 +145,7 @@
                                     <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 menu-grid">
                                         <div class="menu-img">
                                             <div class="menu-block has-post-thumbnail">
-                                                <div class="entry-thumbnail"><img width="329" height="331" src="images/6a.jpg" class="attachment-full size-full wp-post-image" alt="" /></div>
+                                                <div class="entry-thumbnail"><img width="329" height="331" src="images/h9.jpeg" class="attachment-full size-full wp-post-image" alt="" /></div>
                                             </div>
                                         </div>
                                         <div class="menu-grid-col">
@@ -155,7 +155,7 @@
                                     <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 menu-grid">
                                         <div class="menu-img">
                                             <div class="menu-block has-post-thumbnail">
-                                                <div class="entry-thumbnail"><img width="330" height="331" src="images/5.jpg" class="attachment-full size-full wp-post-image" alt="" /></div>
+                                                <div class="entry-thumbnail"><img width="330" height="331" src="images/h11.jpeg" class="attachment-full size-full wp-post-image" alt="" /></div>
                                             </div>
                                         </div>
                                         <div class="menu-grid-col">
@@ -165,7 +165,7 @@
                                     <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 menu-grid">
                                         <div class="menu-img">
                                             <div class="menu-block has-post-thumbnail">
-                                                <div class="entry-thumbnail"><img width="330" height="331" src="images/4.jpg" class="attachment-full size-full wp-post-image" alt="" /></div>
+                                                <div class="entry-thumbnail"><img width="330" height="331" src="images/h15.webp" class="attachment-full size-full wp-post-image" alt="" /></div>
                                             </div>
                                         </div>
                                         <div class="menu-grid-col">
@@ -175,7 +175,7 @@
                                     <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 menu-grid">
                                         <div class="menu-img">
                                             <div class="menu-block has-post-thumbnail">
-                                                <div class="entry-thumbnail"><img width="329" height="331" src="images/6.jpg" class="attachment-full size-full wp-post-image" alt="" /></div>
+                                                <div class="entry-thumbnail"><img width="329" height="331" src="images/h13.webp" class="attachment-full size-full wp-post-image" alt="" /></div>
                                             </div>
                                         </div>
                                         <div class="menu-grid-col">
@@ -185,7 +185,7 @@
                                     <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 menu-grid">
                                         <div class="menu-img">
                                             <div class="menu-block has-post-thumbnail">
-                                                <div class="entry-thumbnail"><img width="330" height="331" src="images/3.jpg" class="attachment-full size-full wp-post-image" alt="" /></div>
+                                                <div class="entry-thumbnail"><img width="330" height="331" src="images/h14.webp" class="attachment-full size-full wp-post-image" alt="" /></div>
                                             </div>
                                         </div>
                                         <div class="menu-grid-col">
@@ -202,7 +202,7 @@
                             <div class="section-inner">
                                 <div class="section-header">
                                     <div class="section-title">
-                                        <p>Meet Experienced Chef’s</p>
+                                        <p>Unlock the hives of our partners</p>
                                     </div>
                                 </div>
                                 <div class="section-content container">
@@ -210,13 +210,13 @@
                                         <div class="meetchef-grid-col col-xs-12 col-sm-12 col-md-4 col-lg-4">
                                             <div class="blog-img">
                                                 <div class="blog-block has-post-thumbnail">
-                                                    <div class="entry-thumbnail"><img width="423" height="362" src="images/9.jpg" class="attachment-full size-full wp-post-image" alt="" /></div>
+                                                    <div class="entry-thumbnail"><img width="423" height="362" src="images/apiary3.webp" class="attachment-full size-full wp-post-image" alt="" /></div>
                                                 </div>
                                             </div>
                                             <div class="entry-body">
-                                                <h4 class="entry-title">Mark Smith</h4>
-                                                <div class="entry-position">Chief Chef</div>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do eiusmod tempor incididunt ut labore et dolore morbi Lorem ipsum dolor sit amet adipiscing.</p>
+                                                <h4 class="entry-title">Inzerki Apiary</h4>
+                                                <div class="entry-position">Agadir, Morocco </div>
+                                                <p>The Inzerki Apiary in the Souss-Massa region 82 kilometers north of Agadir is the largest traditional collective apiary, or bee yard, in the world. The population living around the apiary is only in 100s, and most of them are beekeepers.</p>
                                                 <ul>
                                                     <li><a class="fb" href="#" target="_blank" rel="noopener">facebook</a> /</li>
                                                     <li><a class="tw" href="#" target="_blank" rel="noopener">twitter</a> /</li>
@@ -229,14 +229,14 @@
                                             <div class="blog-img">
                                                 <div class="blog-block has-post-thumbnail">
                                                     <div class="entry-thumbnail">
-                                                        <img width="423" height="362" src="images/8.jpg" class="attachment-full size-full wp-post-image" alt="" />
+                                                        <img width="423" height="362" src="images/apiary2.jpg" class="attachment-full size-full wp-post-image" alt="" />
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="entry-body">
-                                                <h4 class="entry-title">Harisson</h4>
-                                                <div class="entry-position">Senior Chef</div>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do eiusmod tempor incididunt ut labore et dolore morbi Lorem ipsum dolor sit amet adipiscing.</p>
+                                                <h4 class="entry-title">Rock Hill Honey Bee Farm</h4>
+                                                <div class="entry-position">Stafford, VA</div>
+                                                <p>Their farm sits on five acres of land, and their staff takes great pride in caring for the bees, offering advice and assistance, and providing the highest quality products.</p>
                                                 <ul>
                                                     <li><a class="fb" href="#" target="_blank" rel="noopener">facebook</a> /</li>
                                                     <li><a class="tw" href="#" target="_blank" rel="noopener">twitter</a> /</li>
@@ -252,9 +252,9 @@
                                                 </div>
                                             </div>
                                             <div class="entry-body">
-                                                <h4 class="entry-title">Joseph</h4>
-                                                <div class="entry-position">Senior Chef</div>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do eiusmod tempor incididunt ut labore et dolore morbi Lorem ipsum dolor sit amet adipiscing.</p>
+                                                <h4 class="entry-title">Kashmir Apiaries Exports</h4>
+                                                <div class="entry-position">Doraha, Ludhiana, India</div>
+                                                <p>Kashmir Apiaries has 50,000 bee colonies across India. It is considered the largest exporter in the country and supplies to a good number of nations around the globe. </p>
                                                 <ul>
                                                     <li><a class="fb" href="#" target="_blank" rel="noopener">facebook</a> /</li>
                                                     <li><a class="tw" href="#" target="_blank" rel="noopener">twitter</a> /</li>
