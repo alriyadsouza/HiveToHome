@@ -86,8 +86,7 @@
                                         <p>Harvesting Nature's Sweetness, Bottled for You.</p>
                                     </div>
                                     <div class="section-subtitle">
-                                        <p>
-Embark on a journey of exquisite flavors with HiveToHome's pure, organic honey collection. Our commitment to quality ensures that every jar encapsulates the rich essence of nature's wonder.</p>
+                                        <p>Embark on a journey of exquisite flavors with HiveToHome's pure, organic honey collection. Our commitment to quality ensures that every jar encapsulates the rich essence of nature's wonder.</p>
                                         <p> Elevate your culinary experiences and enjoy the wholesome goodness that only HiveToHome can deliver. Your palate awaits – select your jar before you go!</p>
                                     </div>
                                     <button class="btn-link"><a href="#" target="_self">Order Now</a></button>
