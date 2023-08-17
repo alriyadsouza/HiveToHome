@@ -21,6 +21,34 @@
     <script type='text/javascript' src='js/js-u.js'></script>
     <script type='text/javascript' src='js/slick.js'></script>
     <script type='text/javascript' src='js/slick.min.js'></script>
+    <title>Popup Login and Signup Forms</title>
+    <style>
+        /* Style for the faded background */
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+            z-index: 1;
+        }
+
+        /* Style for the popup */
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            z-index: 2;
+        }
+    </style>
 </head>
 
 <body class="home page-template page-template-tmpl-frontpage page-template-tmpl-frontpage-php page page-id-6" style="color: burlywood;">
@@ -40,8 +68,89 @@
                         <li class="menu-item"><a href="#blog">read blog</a></li>
                         <li class="menu-item"><a href="#gallery">gallery</a></li>
                         <li class="menu-item"><a href="#contact">contact</a></li>
+                        <button id="loginButton">Login</button>
+                        <button id="signupButton">Sign Up</button>
+
                     </ul>
+                    <div class="overlay" id="overlay"></div>
+
+    <div id="loginPopup" class="popup">
+        <h2>Login</h2>
+        <form>
+            <label for="loginUsername">Username:</label>
+            <input type="text" id="loginUsername" name="loginUsername"><br><br>
+            
+            <label for="loginEmail">Email:</label>
+            <input type="email" id="loginEmail" name="loginEmail"><br><br>
+            
+            <label for="loginPassword">Password:</label>
+            <input type="password" id="loginPassword" name="loginPassword"><br><br>
+            
+            <button type="submit">Login</button>
+        </form>
+        <button id="closeLoginPopup">Close</button>
+    </div>
+
+    <div id="signupPopup" class="popup">
+        <h2>Sign Up</h2>
+        <form>
+            <label for="signupUsername">Username:</label>
+            <input type="text" id="signupUsername" name="signupUsername"><br><br>
+            
+            <label for="signupEmail">Email:</label>
+            <input type="email" id="signupEmail" name="signupEmail"><br><br>
+            
+            <label for="signupPassword">Password:</label>
+            <input type="password" id="signupPassword" name="signupPassword"><br><br>
+            
+            <button type="submit">Sign Up</button>
+        </form>
+        <button id="closeSignupPopup">Close</button>
+    </div>
+
+    <script>
+        // Get references to the buttons and popup elements
+        const loginButton = document.getElementById("loginButton");
+        const signupButton = document.getElementById("signupButton");
+        const overlay = document.getElementById("overlay");
+        const loginPopup = document.getElementById("loginPopup");
+        const signupPopup = document.getElementById("signupPopup");
+        const closeLoginPopup = document.getElementById("closeLoginPopup");
+        const closeSignupPopup = document.getElementById("closeSignupPopup");
+
+        // Open login popup when login button is clicked
+        loginButton.addEventListener("click", () => {
+            overlay.style.display = "block";
+            loginPopup.style.display = "block";
+        });
+
+        // Open signup popup when signup button is clicked
+        signupButton.addEventListener("click", () => {
+            overlay.style.display = "block";
+            signupPopup.style.display = "block";
+        });
+
+        // Close the login popup when the close button is clicked
+        closeLoginPopup.addEventListener("click", () => {
+            overlay.style.display = "none";
+            loginPopup.style.display = "none";
+        });
+
+        // Close the signup popup when the close button is clicked
+        closeSignupPopup.addEventListener("click", () => {
+            overlay.style.display = "none";
+            signupPopup.style.display = "none";
+        });
+
+        // Close the popups when clicking on the overlay
+        overlay.addEventListener("click", () => {
+            overlay.style.display = "none";
+            loginPopup.style.display = "none";
+            signupPopup.style.display = "none";
+        });
+    </script>
                 </nav>
+                
                 <nav id="site-nav-tools" class="site-nav-tools">
                     <button class="menu-toggle" aria-controls="site-navigation" aria-expanded="false" data-el="aria">
                         <span class="screen-reader-text">Primary Menu</span>
@@ -49,7 +158,8 @@
                     </button>
                 </nav>
             </div>
-        </header><!-- #masthead -->
+        </header>
+        
         <div id="content" class="site-content">
 
             <div id="primary" class="content-area front-page-content-area">
