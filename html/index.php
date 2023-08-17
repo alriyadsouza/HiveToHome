@@ -83,13 +83,14 @@
                                 </div>
                                 <div class="section-header col-xs-12 col-sm-12 col-md-6 col-lg-6">
                                     <div class="section-title">
-                                        <p>Qasa Serves Contemporary European Cuisine.</p>
+                                        <p>Harvesting Nature's Sweetness, Bottled for You.</p>
                                     </div>
                                     <div class="section-subtitle">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do eiusmod tempor incididunt ut labore et dolore morbi Lorem ipsum dolor sit amet adipiscing.</p>
-                                        <p>Lorem consectetur adipiscing eliturna. dolor sit amet, adipiscing eliturna. consectetur ipsum dolor sit amet, consectetur adipi scing elit, sed do eiusmorbi Lorem ipsum dolor sit...</p>
+                                        <p>
+Embark on a journey of exquisite flavors with HiveToHome's pure, organic honey collection. Our commitment to quality ensures that every jar encapsulates the rich essence of nature's wonder.</p>
+                                        <p> Elevate your culinary experiences and enjoy the wholesome goodness that only HiveToHome can deliver. Your palate awaits – select your jar before you go!</p>
                                     </div>
-                                    <button class="btn-link"><a href="#" target="_self">Book A Table</a></button>
+                                    <button class="btn-link"><a href="#" target="_self">Order Now</a></button>
                                 </div>
                             </div>
                         </div>
