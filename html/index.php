@@ -70,25 +70,6 @@
 </head>
 
 <body class="home page-template page-template-tmpl-frontpage page-template-tmpl-frontpage-php page page-id-6" style="color: burlywood;">
-    <div class="content">
-        <!-- notification message -->
-        <?php if (isset($_SESSION['success'])) : ?>
-        <div class="error success" >
-            <h3>
-            <?php 
-                echo $_SESSION['success']; 
-                unset($_SESSION['success']);
-            ?>
-            </h3>
-        </div>
-        <?php endif ?>
-
-        <!-- logged in user information -->
-        <?php  if (isset($_SESSION['username'])) : ?>
-            <p>Welcome <strong><?php echo $_SESSION['username']; ?></strong></p>
-            <p> <a href="index.php?logout='1'" style="color: red;">logout</a> </p>
-        <?php endif ?>
-    </div>
     <div class="contact-video"></div>
     <div id="page" class="site" style="color: burlywood;">
         <header id="masthead" class="site-header">
@@ -105,9 +86,24 @@
                         <li class="menu-item"><a href="#blog">read blog</a></li>
                         <li class="menu-item"><a href="#gallery">gallery</a></li>
                         <li class="menu-item"><a href="#contact">contact</a></li>
-                        <li button id="loginButton">Login</button></li>
-                        <li button id="signupButton">Sign Up</button></li>
+                        <div class="content">
+                            <!-- notification message -->
+                            <?php if (isset($_SESSION['success'])) : ?>
+                            <div class="error success" >
+                                <h3>
+                                <?php 
+                                    echo $_SESSION['success']; 
+                                    unset($_SESSION['success']);
+                                ?>
+                                </h3>
+                            </div>
+                            <?php endif ?>
 
+                            <!-- logged in user information -->
+                            <?php  if (isset($_SESSION['username'])) : ?>
+                                <p> <a href="index.php?logout='1'" style="color: red;">logout</a> </p>
+                            <?php endif ?>
+                        </div>
                     </ul>
                     <div class="overlay" id="overlay"></div>
 
@@ -585,11 +581,10 @@
                                                     <p>Contact Us</p>
                                                 </div>
                                                 <div class="section-content">
-                                                    <p style="text-align: center">4th Floor, Amira Building,<br />
-                                                        123 North Side Street, Sydney, Australia - 45678,</p>
-                                                    <p style="text-align: center">Phone: <a href="tel:">1 800 123456789</a><br />
-                                                        <a href="mailto:">info@sqlabs.com</a> / <a href="http:">squarelabsbuilders.com</a></p>
-                                                    <p style="text-align: center">Mon–Sat: 8:00am–6:00pm / Sunday: Closed</p>
+                                                    <br>
+                                                    <br><br>
+                                                    <p style="text-align: center">Phone: <a href="tel:">+91 8660527370</a><br />
+                                                        <a href="mailto:">ashalpearl@gmail.com</a> / <a href="http:">alriyatreeza@gmail.com</a></p>
                                                     <ul>
                                                         <li style="text-align: center"><a class="fb" href="#" target="_blank" rel="noopener">facebook</a> /</li>
                                                         <li style="text-align: center"><a class="tw" href="#" target="_blank" rel="noopener">twitter</a> /</li>
