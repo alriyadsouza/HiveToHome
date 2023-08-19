@@ -35,5 +35,12 @@
   		Already a member? <a href="login.php">Sign in</a>
   	</p>
   </form>
+
+  <?php
+  if (count($errors) == 0) {
+    $user_id = mysqli_insert_id($db); // Get the last inserted user_id
+    $_SESSION['user_id'] = $user_id;
+  }
+  ?>
 </body>
 </html>

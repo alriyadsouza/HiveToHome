@@ -42,14 +42,7 @@
     border-radius: 5px;
     border: 1px solid gray;
   }
-  .btn {
-    padding: 10px;
-    font-size: 15px;
-    color: white;
-    background: #5F9EA0;
-    border: none;
-    border-radius: 5px;
-  }
+  
   .error {
     width: 92%; 
     margin: 0px auto; 
@@ -65,3 +58,4 @@
     background: #dff0d8; 
     border: 1px solid #3c763d;
     margin-bottom: 20px;
+  }

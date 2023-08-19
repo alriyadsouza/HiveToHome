@@ -49,6 +49,11 @@
         input[type="submit"]:hover {
             background-color: #ffbf00;
         }
+        .message {
+            text-align: center;
+            margin-top: 20px;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -57,29 +62,89 @@
         <form method="post">
             <label for="honeyType">Select Honey Type:</label>
             <select id="honeyType" name="honeyType">
-                <option value="clover">Clover Honey</option>
-                <option value="orange">Orange Blossom Honey</option>
-                <option value="acacia">Acacia Honey</option>
-                <option value="linden">Linden Honey</option>
-                <option value="dandelion">Dandelion Honey</option>
-                <option value="wildflower">Wildflower Honey</option>
-                <option value="buckwheat">Buckwheat honey</option>
-                <option value="sage">Sage honey</option>
+                <option value="Clover Honey">Clover Honey</option>
+                <option value="Orange Blossom Hone">Orange Blossom Honey</option>
+                <option value="Acacia Honey">Acacia Honey</option>
+                <option value="Linden Honey">Linden Honey</option>
+                <option value="Dandelion Honey">Dandelion Honey</option>
+                <option value="Wildflower Honey">Wildflower Honey</option>
+                <option value="Buckwheat Honey">Buckwheat Honey</option>
+                <option value="Sage Honey">Sage Honey</option>
             </select>
             <label for="quantity">Quantity (kg):</label>
             <input type="number" id="quantity" name="quantity" min="1" max="100">
             <input type="submit" name="submit" value="Complete Order">
         </form>
-        <?php
-        if(isset($_POST['submit'])) {
-            $honeyType = $_POST['honeyType'];
-            $quantity = $_POST['quantity'];
-            
-            // Process the order and store the data in the database
-            // Replace this with your actual database handling code
-            echo "<p>Delight in success as your order for $quantity bottles of $honeyType graces our hive with sweet anticipation.</p>";
-        }
-        ?>
+        <div class="message">
+            <?php
+            $host = "localhost";
+            $dbUsername = "root";
+            $dbPassword = "";
+            $dbName = "hivetohome"; // Update with your database name
+
+            $conn = new mysqli($host, $dbUsername, $dbPassword, $dbName);
+
+            if ($conn->connect_error) {
+                die('Could not connect to the database.');
+            }
+
+            session_start();
+
+            if (isset($_POST['submit'])) {
+                $honeyType =($_POST['honeyType']);
+                $quantity = $_POST['quantity'];
+    
+                // Get honey type details from the database
+                $query = "SELECT ht.type_id, ht.name, ht.price, ht.description, iv.quantity FROM honey_types ht
+                        JOIN inventory iv ON ht.type_id = iv.type_id
+                        WHERE LOWER(ht.name) = LOWER(?)";
+                $stmt = $conn->prepare($query);
+                $stmt->bind_param("s", $honeyType);
+                $stmt->execute();
+                $result = $stmt->get_result();
+
+                if ($result->num_rows > 0) {
+                        $row = $result->fetch_assoc();
+                        $type_id = $row['type_id'];
+                        $name = $row['name'];
+                        $price = $row['price'];
+                        $description = $row['description'];
+                        $availableQuantity = $row['quantity'];
+
+                        if ($quantity <= $availableQuantity) {
+                            $user_id = $_SESSION['user_id'];
+                
+                            // Insert booking into the database
+                            $insertQuery = "INSERT INTO bookings (user_id, type_id, quantity, booking_date) VALUES (?, ?, ?, NOW())";
+                            $stmt = $conn->prepare($insertQuery);
+                            $stmt->bind_param("iii", $user_id, $type_id, $quantity);
+                
+                            if ($stmt->execute()) {
+                                // Update inventory quantity
+                                $updateInventoryQuery = "UPDATE inventory SET quantity = quantity - ? WHERE type_id = ?";
+                                $stmt = $conn->prepare($updateInventoryQuery);
+                                $stmt->bind_param("ii", $quantity, $type_id);
+                                if ($stmt->execute()) {
+                                    echo "Your order for $quantity bottle of $name has been placed successfully.";
+                                } else {
+                                    echo "Error updating inventory: " . $stmt->error;
+                                }
+                            } else {
+                                echo "Error placing order: " . $stmt->error;
+                            }
+                        } else {
+                            echo "Out of stock. Available quantity for $name: $availableQuantity bottles.";
+                        }
+                    }
+                } else {
+                    echo "Invalid honey type selected.";
+                }
+
+                $stmt->close();
+
+            $conn->close();
+            ?>
+        </div>
     </div>
 </body>
 </html>

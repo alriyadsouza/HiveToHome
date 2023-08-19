@@ -36,9 +36,40 @@
     <script type='text/javascript' src='js/slick.min.js'></script>
     <title>Popup Login and Signup Forms</title>
     <style>
-        /* ... (your existing styles) ... */
+        .button-container {
+            text-align: center;
+            margin-top: 50px;
+        }
 
-        /* Style for the overlay (faded background) */
+        .button {
+            margin-left: 60px;
+            margin-top: 11px;
+            border: none;
+            width: 366px;
+            height: 66px;
+            border-radius: 5px;
+            background: #000;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 18px;
+            line-height: 66px;
+        }
+
+        .button:hover {
+            background-color: #333;
+        }
+
+        .button a {
+            color: #fff;
+            text-decoration: none;
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+        }
+
+
         .overlay {
             display: none;
             position:absolute;
@@ -233,7 +264,10 @@
                                         <p>Embark on a journey of exquisite flavors with HiveToHome's pure, organic honey collection. Our commitment to quality ensures that every jar encapsulates the rich essence of nature's wonder.</p>
                                         <p>Your palate awaits – select your jar before you go!</p>
                                     </div>
-                                    <button class="btn-link"><a href="order.php" target="_self">Order Now</a></button>
+                                    <div class="button-container">
+                                        <button class="button"><a href="order.php" target="_self">Order Now</a></button>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
