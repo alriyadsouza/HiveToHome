@@ -1,4 +1,4 @@
-<p align='center'> <img src="https://github.com/Ashaldsouza/HiveToHome/assets/109797633/2c5bd58e-91e9-4129-9025-1b2c83d7eedb" width=250 ><h1 align='center'>HiveToHome - Honey E-commerce Platform</h1></p>
+<h1 align='center'>HiveToHome - Honey E-commerce Platform</h1>
 
 <p align='center'> <img src="https://github.com/Ashaldsouza/HiveToHome/assets/109797633/bb1355af-fc9f-4380-9236-c5f9f6050edc" width=250></p>
 
