@@ -229,14 +229,14 @@
 
             <div id="primary" class="content-area front-page-content-area">
                 <main id="main" class="site-main">
-                <section id="banner" class="section banner-section" data-eltype="frontpagesection" style="background-image: url(images/IMG_1632.jpeg); position: relative;">
+                <section id="banner" class="section banner-section" data-eltype="frontpagesection" style="background-image: url(images/output-onlinepngtools.png); position: relative;">
                     <div class="container section-inner">
                         <div class="section-body">
                             <div class="section-header">
-                                <div class="section-title" style="color: white; font-size: 40px; font-weight: bold;">
+                                <div class="section-title" style="color: black; font-size: 40px; font-weight: bold;">
                                     <p>Harvesting Nature's Bounty: Nectar to Your Doorstep Through HiveToHome :)</p>
                                 </div>
-                                <p class="section-subtitle" style="color: white; font-size: 25px; font-weight: bold;">Discover the symphony of flavors in our HiveToHome: Honey Order and Apiary Management System. Order nature's liquid gold effortlessly while exploring advanced apiary management tools.
+                                <p class="section-subtitle" style="color: black; font-size: 25px; font-weight: bold;">Discover the symphony of flavors in our HiveToHome: Honey Order and Apiary Management System. Order nature's liquid gold effortlessly while exploring advanced apiary management tools.
                                 </p>
                             </div>
                         </div>
