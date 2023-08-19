@@ -1,4 +1,4 @@
-<h1 align='center'> HiveToHome - Honey E-commerce Platform</h1>
+<h1 align='center'>HiveToHome - Honey E-commerce Platform</h1>
 
 Welcome to HiveToHome, an online platform that connects honey enthusiasts with high-quality honey products straight from the hive to their homes. This project aims to provide users with a seamless experience to browse, order, and enjoy various types of honey. The project is built using PHP, MySQL, and HTML, offering a user-friendly interface for honey selection, ordering, and management.
 
