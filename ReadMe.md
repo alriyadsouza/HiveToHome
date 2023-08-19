@@ -1,4 +1,6 @@
-<h1 align='center'>HiveToHome - Honey E-commerce Platform</h1>
+<p align='center'> <img src="https://github.com/Ashaldsouza/HiveToHome/assets/109797633/2c5bd58e-91e9-4129-9025-1b2c83d7eedb" width=250 ><h1 align='center'>HiveToHome - Honey E-commerce Platform</h1></p>
+
+<p align='center'> <img src="https://github.com/Ashaldsouza/HiveToHome/assets/109797633/bb1355af-fc9f-4380-9236-c5f9f6050edc" width=250></p>
 
 Welcome to HiveToHome, an online platform that connects honey enthusiasts with high-quality honey products straight from the hive to their homes. This project aims to provide users with a seamless experience to browse, order, and enjoy various types of honey. The project is built using PHP, MySQL, and HTML, offering a user-friendly interface for honey selection, ordering, and management.
 
@@ -58,6 +60,11 @@ The project uses a MySQL database to manage user information, honey types, inven
 - HTML
 - CSS (Styling)
 - JavaScript (UI enhancements)
+
+## Contributors
+
+- [@alriyadsouza](https://github.com/alriyadsouza) - Alriya Treeza D Souza
+- [@Ashaldsouza](https://github.com/Ashaldsouza) - Ashal Pearl Dsouza
 
 ## Contributing
 
