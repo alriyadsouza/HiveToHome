@@ -60,7 +60,7 @@
     <div class="container">
         <h1>Place Your Order</h1>
         <form method="post">
-            <label for="honeyType">Select Honey Type:</label>
+        <label for="honeyType">Select Honey Type:</label>
             <select id="honeyType" name="honeyType">
                 <option value="Clover Honey">Clover Honey</option>
                 <option value="Orange Blossom Hone">Orange Blossom Honey</option>
@@ -91,9 +91,9 @@
             session_start();
 
             if (isset($_POST['submit'])) {
-                $honeyType =($_POST['honeyType']);
+                $honeyType = ($_POST['honeyType']);
                 $quantity = $_POST['quantity'];
-    
+
                 // Get honey type details from the database
                 $query = "SELECT ht.type_id, ht.name, ht.price, ht.description, iv.quantity FROM honey_types ht
                         JOIN inventory iv ON ht.type_id = iv.type_id
@@ -104,47 +104,71 @@
                 $result = $stmt->get_result();
 
                 if ($result->num_rows > 0) {
-                        $row = $result->fetch_assoc();
-                        $type_id = $row['type_id'];
-                        $name = $row['name'];
-                        $price = $row['price'];
-                        $description = $row['description'];
-                        $availableQuantity = $row['quantity'];
+                    $row = $result->fetch_assoc();
+                    $type_id = $row['type_id'];
+                    $name = $row['name'];
+                    $price = $row['price'];
+                    $description = $row['description'];
+                    $availableQuantity = $row['quantity'];
 
-                        if ($quantity <= $availableQuantity) {
-                            $user_id = $_SESSION['user_id'];
-                
-                            // Insert booking into the database
-                            $insertQuery = "INSERT INTO bookings (user_id, type_id, quantity, booking_date) VALUES (?, ?, ?, NOW())";
-                            $stmt = $conn->prepare($insertQuery);
-                            $stmt->bind_param("iii", $user_id, $type_id, $quantity);
-                
+                    if ($quantity <= $availableQuantity) {
+                        $user_id = $_SESSION['user_id'];
+
+                        // Insert booking into the database
+                        $insertQuery = "INSERT INTO bookings (user_id, type_id, quantity, booking_date) VALUES (?, ?, ?, NOW())";
+                        $stmt = $conn->prepare($insertQuery);
+                        $stmt->bind_param("iii", $user_id, $type_id, $quantity);
+
+                        if ($stmt->execute()) {
+                            // Update inventory quantity
+                            $updateInventoryQuery = "UPDATE inventory SET quantity = quantity - ? WHERE type_id = ?";
+                            $stmt = $conn->prepare($updateInventoryQuery);
+                            $stmt->bind_param("ii", $quantity, $type_id);
                             if ($stmt->execute()) {
-                                // Update inventory quantity
-                                $updateInventoryQuery = "UPDATE inventory SET quantity = quantity - ? WHERE type_id = ?";
-                                $stmt = $conn->prepare($updateInventoryQuery);
-                                $stmt->bind_param("ii", $quantity, $type_id);
-                                if ($stmt->execute()) {
-                                    echo "Your order for $quantity bottle of $name has been placed successfully.";
+                                $query = "SELECT booking_id FROM bookings WHERE user_id = ? AND type_id = ? ";
+                                $stmt = $conn->prepare($query);
+                                $stmt->bind_param("ii", $user_id, $type_id); // Assuming both user_id and type_id are integers
+                                $stmt->execute();
+                                $result = $stmt->get_result();
+
+                                if ($result->num_rows > 0) {
+                                    $row = $result->fetch_assoc();
+                                    $booking_id = $row['booking_id'];
+                                    
+                                    // Store booking_id in session for future use
+                                    session_start();
+                                    $_SESSION['booking_id'] = $booking_id;
                                 } else {
-                                    echo "Error updating inventory: " . $stmt->error;
+                                    // Handle the case when no matching booking is found
                                 }
+
+                            
+                                echo "Your order for $quantity kg of $name has been placed successfully.";
+                                // Redirect to payment page after successful order placement
+                                header("Location: payment.php");
+                                exit(); // Make sure to exit after redirection
                             } else {
-                                echo "Error placing order: " . $stmt->error;
+                                echo "Error updating inventory: " . $stmt->error;
                             }
                         } else {
-                            echo "Out of stock. Available quantity for $name: $availableQuantity bottles.";
+                            echo "Error placing order: " . $stmt->error;
                         }
+                    } else {
+                        echo "Out of stock. Available quantity for $name: $availableQuantity kg.";
                     }
                 } else {
                     echo "Invalid honey type selected.";
                 }
 
                 $stmt->close();
+            }
 
             $conn->close();
             ?>
         </div>
+        
     </div>
+
+    
 </body>
 </html>

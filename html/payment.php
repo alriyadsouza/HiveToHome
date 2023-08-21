@@ -1,54 +1,150 @@
+<?php include('server.php') ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HiveToHome - Complete Payment</title>
+    <title>HiveToHome - Place Your Order</title>
     <style>
-        /* ... (your existing CSS styles) ... */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        select, input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        input[type="submit"] {
+            background-color: #ff9900;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #ffbf00;
+        }
+        .message {
+            text-align: center;
+            margin-top: 20px;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Complete Payment</h1>
+        <h1>Payment Details</h1>
         <form method="post">
-            <label for="bookingId">Booking ID:</label>
-            <input type="number" id="bookingId" name="bookingId" min="1">
-            <label for="amount">Amount ($):</label>
-            <input type="number" id="amount" name="amount" min="0.01" step="0.01">
-            <input type="submit" name="submit" value="Complete Payment">
-        </form>
-        <?php
-        $servername = "localhost";
-        $username = "root";
-        $password = "";
-        $dbname = "hivetohome"; // Replace with your actual database name
-        
-        if(isset($_POST['submit'])) {
-            $bookingId = $_POST['bookingId'];
-            $amount = $_POST['amount'];
+            <?php include('errors.php'); ?>
             
-            // Create connection
-            $conn = new mysqli($servername, $username, $password, $dbname);
-            
-            // Check connection
+            <?php
+            $host = "localhost";
+            $dbUsername = "root";
+            $dbPassword = "";
+            $dbName = "hivetohome"; // Update with your database name
+
+            $conn = new mysqli($host, $dbUsername, $dbPassword, $dbName);
+
             if ($conn->connect_error) {
-                die("Connection failed: " . $conn->connect_error);
+                die('Could not connect to the database.');
             }
-            
-            // Insert payment data into the "payments" table
-            $sql = "INSERT INTO payments (booking_id, amount, payment_date)
-                    VALUES ($bookingId, $amount, NOW())";
-            
-            if ($conn->query($sql) === TRUE) {
-                echo "<p>Payment successful. Thank you for your purchase!</p>";
+
+            $booking_id = $_SESSION['booking_id'];
+            echo $booking_id;
+
+            // Make sure the booking_id exists before proceeding
+            if (!isset($booking_id)) {
+                echo $booking_id;
+                echo "Invalid booking_id. Please go back and place an order.";
+                exit(); // Exit the script to prevent further execution
+            }
+
+            $priceQuery = "SELECT h.price FROM honey_types h
+                           JOIN bookings b ON h.type_id = b.type_id
+                           WHERE b.booking_id = ?";
+            $stmt = $conn->prepare($priceQuery);
+            $stmt->bind_param("i", $booking_id);
+            $stmt->execute();
+            $result = $stmt->get_result();
+
+            if ($result->num_rows > 0) {
+                $row = $result->fetch_assoc();
+                $price = $row['price'];
+                echo "<label>Payment Amount:</label>";
+                echo "<p>$price</p>";
             } else {
-                echo "Error: " . $sql . "<br>" . $conn->error;
+                echo "Error fetching payment details.";
+                exit();
             }
+            $stmt->close();
+            ?>
             
-            $conn->close();
-        }
-        ?>
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country" required>
+            
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+            
+            <label for="pincode">Pincode:</label>
+            <input type="text" id="pincode" name="pincode" required>
+            
+            <input type="submit" name="submit_payment" value="Complete Payment">
+        </form>
+        <div class="message">
+            <!-- Display payment status message here -->
+        </div>
     </div>
 </body>
 </html>
+
+<?php
+// Process payment form submission
+if (isset($_POST['submit_payment'])) {
+    $country = $_POST['country'];
+    $address = $_POST['address'];
+    $pincode = $_POST['pincode'];
+
+    $payment_id = $pincode . "_" . $booking_id;
+
+    $paymentInsertQuery = "INSERT INTO payment (payment_id, booking_id, price, country, address, pincode, payment_date) 
+                           VALUES (?, ?, ?, ?, ?, ?, NOW())";
+    $stmt = $conn->prepare($paymentInsertQuery);
+    $stmt->bind_param("siisss", $payment_id, $booking_id, $price, $country, $address, $pincode);
+    
+    if ($stmt->execute()) {
+        echo "<div class='message'>Payment successful. Your payment ID: $payment_id</div>";
+    } else {
+        echo "<div class='message'>Payment failed. Please try again later.</div>";
+    }
+
+    $stmt->close();
+}
+?>
+
