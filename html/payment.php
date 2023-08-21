@@ -68,7 +68,7 @@
             $host = "localhost";
             $dbUsername = "root";
             $dbPassword = "";
-            $dbName = "hivetohome"; // Update with your database name
+            $dbName = "hivetohome"; 
 
             $conn = new mysqli($host, $dbUsername, $dbPassword, $dbName);
 
@@ -79,11 +79,10 @@
             $booking_id = $_SESSION['booking_id'];
             echo $booking_id;
 
-            // Make sure the booking_id exists before proceeding
             if (!isset($booking_id)) {
                 echo $booking_id;
                 echo "Invalid booking_id. Please go back and place an order.";
-                exit(); // Exit the script to prevent further execution
+                exit(); 
             }
 
             $priceQuery = "SELECT h.price FROM honey_types h
@@ -118,14 +117,12 @@
             <input type="submit" name="submit_payment" value="Complete Payment">
         </form>
         <div class="message">
-            <!-- Display payment status message here -->
         </div>
     </div>
 </body>
 </html>
 
 <?php
-// Process payment form submission
 if (isset($_POST['submit_payment'])) {
     $country = $_POST['country'];
     $address = $_POST['address'];

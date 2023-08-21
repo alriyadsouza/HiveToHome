@@ -80,7 +80,7 @@
             $host = "localhost";
             $dbUsername = "root";
             $dbPassword = "";
-            $dbName = "hivetohome"; // Update with your database name
+            $dbName = "hivetohome"; 
 
             $conn = new mysqli($host, $dbUsername, $dbPassword, $dbName);
 
@@ -94,7 +94,6 @@
                 $honeyType = ($_POST['honeyType']);
                 $quantity = $_POST['quantity'];
 
-                // Get honey type details from the database
                 $query = "SELECT ht.type_id, ht.name, ht.price, ht.description, iv.quantity FROM honey_types ht
                         JOIN inventory iv ON ht.type_id = iv.type_id
                         WHERE LOWER(ht.name) = LOWER(?)";
@@ -114,20 +113,18 @@
                     if ($quantity <= $availableQuantity) {
                         $user_id = $_SESSION['user_id'];
 
-                        // Insert booking into the database
                         $insertQuery = "INSERT INTO bookings (user_id, type_id, quantity, booking_date) VALUES (?, ?, ?, NOW())";
                         $stmt = $conn->prepare($insertQuery);
                         $stmt->bind_param("iii", $user_id, $type_id, $quantity);
 
                         if ($stmt->execute()) {
-                            // Update inventory quantity
                             $updateInventoryQuery = "UPDATE inventory SET quantity = quantity - ? WHERE type_id = ?";
                             $stmt = $conn->prepare($updateInventoryQuery);
                             $stmt->bind_param("ii", $quantity, $type_id);
                             if ($stmt->execute()) {
                                 $query = "SELECT booking_id FROM bookings WHERE user_id = ? AND type_id = ? ";
                                 $stmt = $conn->prepare($query);
-                                $stmt->bind_param("ii", $user_id, $type_id); // Assuming both user_id and type_id are integers
+                                $stmt->bind_param("ii", $user_id, $type_id); 
                                 $stmt->execute();
                                 $result = $stmt->get_result();
 
@@ -135,7 +132,6 @@
                                     $row = $result->fetch_assoc();
                                     $booking_id = $row['booking_id'];
                                     
-                                    // Store booking_id in session for future use
                                     session_start();
                                     $_SESSION['booking_id'] = $booking_id;
                                 } else {
@@ -144,9 +140,8 @@
 
                             
                                 echo "Your order for $quantity kg of $name has been placed successfully.";
-                                // Redirect to payment page after successful order placement
                                 header("Location: payment.php");
-                                exit(); // Make sure to exit after redirection
+                                exit(); 
                             } else {
                                 echo "Error updating inventory: " . $stmt->error;
                             }
@@ -166,9 +161,6 @@
             $conn->close();
             ?>
         </div>
-        
-    </div>
-
-    
+    </div>   
 </body>
 </html>

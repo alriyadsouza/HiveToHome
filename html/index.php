@@ -77,7 +77,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+            background-color: rgba(0, 0, 0, 0.5); 
             z-index: 1;
         }
 
@@ -93,8 +93,8 @@
             border: 1px solid #ccc;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             z-index: 8;
-            width: 80%; /* Adjust the width as needed */
-            max-width: 400px; /* Set a maximum width for the popup */
+            width: 80%; 
+            max-width: 400px; 
         }
     </style>
 
@@ -115,10 +115,8 @@
                         <li class="menu-item"><a href="#menu">our menu</a></li>
                         <li class="menu-item"><a href="#meetchef">apiary</a></li>
                         <li class="menu-item"><a href="#blog">read blog</a></li>
-                        <li class="menu-item"><a href="#gallery">gallery</a></li>
                         <li class="menu-item"><a href="#contact">contact</a></li>
                         <div class="content">
-                            <!-- notification message -->
                             <?php if (isset($_SESSION['success'])) : ?>
                             <div class="error success" >
                                 <h3>
@@ -130,7 +128,6 @@
                             </div>
                             <?php endif ?>
 
-                            <!-- logged in user information -->
                             <?php  if (isset($_SESSION['username'])) : ?>
                                 <p> <a href="index.php?logout='1'" style="color: red;">logout</a> </p>
                             <?php endif ?>
@@ -174,7 +171,6 @@
 
 
     <script>
-        // Get references to the buttons and popup elements
         const loginButton = document.getElementById("loginButton");
         const signupButton = document.getElementById("signupButton");
         const overlay = document.getElementById("overlay");
@@ -183,31 +179,26 @@
         const closeLoginPopup = document.getElementById("closeLoginPopup");
         const closeSignupPopup = document.getElementById("closeSignupPopup");
 
-        // Open login popup when login button is clicked
         loginButton.addEventListener("click", () => {
             overlay.style.display = "block";
             loginPopup.style.display = "block";
         });
 
-        // Open signup popup when signup button is clicked
         signupButton.addEventListener("click", () => {
             overlay.style.display = "block";
             signupPopup.style.display = "block";
         });
 
-        // Close the login popup when the close button is clicked
         closeLoginPopup.addEventListener("click", () => {
             overlay.style.display = "none";
             loginPopup.style.display = "none";
         });
 
-        // Close the signup popup when the close button is clicked
         closeSignupPopup.addEventListener("click", () => {
             overlay.style.display = "none";
             signupPopup.style.display = "none";
         });
 
-        // Close the popups when clicking on the overlay
         overlay.addEventListener("click", () => {
             overlay.style.display = "none";
             loginPopup.style.display = "none";
@@ -493,8 +484,7 @@
                                                 <div class="post-thumbnail"><img width="404" height="315" src="images/17.jpg" class="attachment-full size-full wp-post-image" alt="" /></div>
                                                 <div class="content">
                                                     <header class="entry-header">
-                                                        <h3 class="entry-title"><a href="#" rel="bookmark">Mummy Hot Dogs Are A Must At Your Halloween Party</a></h3> <!--  -->
-                                                        <!-- <button class="link-post"><a href="">Continue Reading</a></button> -->
+                                                        <h3 class="entry-title"><a href="#" rel="bookmark">Mummy Hot Dogs Are A Must At Your Halloween Party</a></h3>
                                                     </header>
                                                     <div class="entry-summary"></div>
                                                 </div>
@@ -507,8 +497,7 @@
                                                 <div class="post-thumbnail"><img width="404" height="312" src="images/15.jpg" class="attachment-full size-full wp-post-image" alt="" /></div>
                                                 <div class="content">
                                                     <header class="entry-header">
-                                                        <h3 class="entry-title"><a href="#" rel="bookmark">Make Dirt Pudding Just Like Mom Used To do</a></h3> <!--  -->
-                                                        <!-- <button class="link-post"><a href="">Continue Reading</a></button> -->
+                                                        <h3 class="entry-title"><a href="#" rel="bookmark">Make Dirt Pudding Just Like Mom Used To do</a></h3> 
                                                     </header>
                                                     <div class="entry-summary"></div>
                                                 </div>
@@ -521,8 +510,7 @@
                                                 <div class="post-thumbnail"><img width="404" height="315" src="images/16.jpg" class="attachment-full size-full wp-post-image" alt="" /></div>
                                                 <div class="content">
                                                     <header class="entry-header">
-                                                        <h3 class="entry-title"><a href="#" rel="bookmark">Make Dirt Pudding Just Like Mom Used To do</a></h3> <!--  -->
-                                                        <!-- <button class="link-post"><a href="">Continue Reading</a></button> -->
+                                                        <h3 class="entry-title"><a href="#" rel="bookmark">Make Dirt Pudding Just Like Mom Used To do</a></h3> 
                                                     </header>
                                                     <div class="entry-summary"></div>
                                                 </div>
@@ -562,19 +550,51 @@
                                         <div class="newsletter-col">
                                             <div>
                                                 <div class="screen-reader-response"></div>
-                                                <form class="wpcf7-form">
+                                                <form class="wpcf7-form" method="post">
                                                     <div class="c-cot-1">
                                                         <span class="wpcf7-form-control-wrap your-name">
-                                                            <input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Rating(/10)" required />
+                                                            <input type="number" name="rating" min="1" max="10" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" placeholder="Rating (/10)" required />
                                                         </span>
                                                     </div>
                                                     <div class="c-cot-2">
                                                         <span class="wpcf7-form-control-wrap your-email">
-                                                            <input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Comment" required />
+                                                            <textarea name="comment" rows="4" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" placeholder="Comment" required></textarea>
                                                         </span>
                                                     </div>
-                                                    <div class="c-cot-3"><input type="submit" value="Review" class="wpcf7-form-control wpcf7-submit" /></div>
-                                                    <div class="wpcf7-response-output wpcf7-display-none"></div>
+                                                    <div class="c-cot-3"><input type="submit" name="submit_review" value="Review" class="wpcf7-form-control wpcf7-submit" /></div>
+                                                    <div class="wpcf7-response-output wpcf7-display-none">
+                                                        <?php
+                                                        $host = "localhost";
+                                                        $dbUsername = "root";
+                                                        $dbPassword = "";
+                                                        $dbName = "hivetohome";
+
+                                                        $conn = new mysqli($host, $dbUsername, $dbPassword, $dbName);
+
+                                                        if ($conn->connect_error) {
+                                                            die('Could not connect to the database.');
+                                                        }
+                                                        if (isset($_POST['submit_review'])) {
+                                                            $rating = $_POST['rating'];
+                                                            $comment = $_POST['comment'];
+                                                            $user_id = $_SESSION['user_id'];
+
+                                                            $insertQuery = "INSERT INTO reviews (user_id, rating, comment, review_date) VALUES (?, ?, ?, NOW())";
+                                                            $stmt = $conn->prepare($insertQuery);
+                                                            $stmt->bind_param("iis", $user_id, $rating, $comment);
+
+                                                            if ($stmt->execute()) {
+                                                                echo "<div class='message'>Review submitted successfully.</div>";
+                                                            } else {
+                                                                echo "<div class='message'>Error submitting review: " . $stmt->error . "</div>";
+                                                            }
+
+                                                            $stmt->close();
+                                                        }
+
+                                                        $conn->close();
+                                                        ?>
+                                                    </div>
                                                     <p style="display: none !important">
                                                         <span class="wpcf7-form-control-wrap referer-page">
                                                             <input type="hidden" name="referer-page" value="direct visit" class="wpcf7-form-control wpcf7-text referer-page" aria-invalid="false">
@@ -649,7 +669,6 @@
                             <li class="menu-item"><a href="index.html">Home</a></li>
                             <li class="menu-item"><a href="#about">About Us</a></li>
                             <li class="menu-item"><a href="#menu">Our Menu</a></li>
-                            <li class="menu-item"><a href="#gallery">View Gallery</a></li>
                             <li class="menu-item"><a href="#testimonials">Client Testimonials</a></li>
                             <li class="menu-item"><a href="#blog">blog</a></li>
                             <li class="menu-item"><a href="#contact">Contact Us</a></li>
