@@ -558,7 +558,7 @@
                                                     </div>
                                                     <div class="c-cot-2">
                                                         <span class="wpcf7-form-control-wrap your-email">
-                                                            <textarea name="comment" rows="4" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" placeholder="Comment" required></textarea>
+                                                            <input name="comment" rows="4" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" placeholder="Comment" required />
                                                         </span>
                                                     </div>
                                                     <div class="c-cot-3"><input type="submit" name="submit_review" value="Review" class="wpcf7-form-control wpcf7-submit" /></div>
