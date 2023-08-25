@@ -54,7 +54,7 @@
             text-decoration: none;
             display: inline-block;
             font-size: 18px;
-            line-height: 66px;
+            line-height: 36px;
         }
 
         .button:hover {
@@ -442,10 +442,8 @@
                         <div class="section-inner">
                             <div class="section-header">
                                 <div class="section-title">
-                                    <p>read blog articles</p>
-                                </div>
-                                <div class="section-subtitle">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do eiusmod tempor incididunt ut labore et dolore morbi Lorem ipsum dolor sit amet adipiscing.</p>
+                                    <p>Exploring the Incredible Benefits</p>
+                                    <p>Of Raw Honey</p>
                                 </div>
                             </div>
                             <div class="section-content">
@@ -453,12 +451,12 @@
                                     <div class="article-grid-col">
                                         <article class="grid-hentry post-89 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
                                             <div class="post-single">
-                                                <div class="post-thumbnail">
-                                                    <img width="404" height="312" src="images/15.jpg" class="attachment-full size-full wp-post-image" alt="" />
+                                                <div class="post-thumbnail" style="margin-left: 0;">
+                                                    <img width="404" height="312" src="images/bgg_health2.jpeg" class="attachment-full size-full wp-post-image" alt="" />
                                                 </div>
                                                 <div class="content">
                                                     <header class="entry-header">
-                                                        <h3 class="entry-title"><a href="#" rel="bookmark">Make Dirt Pudding Just Like Mom Used To do</a></h3>
+                                                        <h3 class="entry-title"><a href="#" rel="bookmark">Benefits Of Raw Honey</a></h3>
                                                     </header>
                                                     <div class="entry-summary"></div>
                                                 </div>
@@ -466,65 +464,16 @@
                                         </article>
                                     </div>
                                     <div class="article-grid-col">
-                                        <article class="grid-hentry post-87 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+                                        <article class="grid-hentry post-87 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized" style="width: 584px; height: 315px;">
                                             <div class="post-single">
-                                                <div class="post-thumbnail"><img width="404" height="315" src="images/16.jpg" class="attachment-full size-full wp-post-image" alt="" /></div>
-                                                <div class="content">
-                                                    <header class="entry-header">
-                                                        <h3 class="entry-title"><a href="#" rel="bookmark">Make Dirt Pudding Just Like Mom Used To do</a></h3>
-                                                    </header>
-                                                    <div class="entry-summary"></div>
-                                                </div>
-                                            </div>
-                                        </article>
-                                    </div>
-                                    <div class="article-grid-col">
-                                        <article class="grid-hentry post-85 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
-                                            <div class="post-single">
-                                                <div class="post-thumbnail"><img width="404" height="315" src="images/17.jpg" class="attachment-full size-full wp-post-image" alt="" /></div>
-                                                <div class="content">
-                                                    <header class="entry-header">
-                                                        <h3 class="entry-title"><a href="#" rel="bookmark">Mummy Hot Dogs Are A Must At Your Halloween Party</a></h3>
-                                                    </header>
-                                                    <div class="entry-summary"></div>
-                                                </div>
-                                            </div>
-                                        </article>
-                                    </div>
-                                    <div class="article-grid-col">
-                                        <article class="grid-hentry post-82 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
-                                            <div class="post-single">
-                                                <div class="post-thumbnail"><img width="404" height="312" src="images/15.jpg" class="attachment-full size-full wp-post-image" alt="" /></div>
-                                                <div class="content">
-                                                    <header class="entry-header">
-                                                        <h3 class="entry-title"><a href="#" rel="bookmark">Make Dirt Pudding Just Like Mom Used To do</a></h3> 
-                                                    </header>
-                                                    <div class="entry-summary"></div>
-                                                </div>
-                                            </div>
-                                        </article>
-                                    </div>
-                                    <div class="article-grid-col">
-                                        <article class="grid-hentry post-79 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
-                                            <div class="post-single">
-                                                <div class="post-thumbnail"><img width="404" height="315" src="images/16.jpg" class="attachment-full size-full wp-post-image" alt="" /></div>
-                                                <div class="content">
-                                                    <header class="entry-header">
-                                                        <h3 class="entry-title"><a href="#" rel="bookmark">Make Dirt Pudding Just Like Mom Used To do</a></h3> 
-                                                    </header>
-                                                    <div class="entry-summary"></div>
-                                                </div>
-                                            </div>
-                                        </article>
-                                    </div>
-                                    <div class="article-grid-col">
-                                        <article class="grid-hentry post-76 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
-                                            <div class="post-single">
-                                                <div class="post-thumbnail"><img width="404" height="315" src="images/17.jpg" class="attachment-full size-full wp-post-image" alt="" /></div>
-                                                <div class="content">
-                                                    <header class="entry-header">
-                                                        <h3 class="entry-title"><a href="#" rel="bookmark">Mummy Hot Dogs Are A Must At Your Halloween Party</a></h3>
-                                                    </header>
+                                                <div class="container section-inner">
+                                                    <div class="section-body">
+                                                        <div class="section-header">
+                                                            <p class="section-subtitle" style="color: black; font-size: 20px;">
+                                                                Raw honey is a natural and minimally processed sweetener that offers a range of health benefits. Packed with nutrients, enzymes, and antioxidants, it supports overall well-being. It may provide relief for allergies, soothe sore throats, aid digestion, boost energy, and aid in wound healing. Its antimicrobial properties make it useful for skincare and oral health. While offering potential advantages such as heart health and immune support, it's important to consume raw honey in moderation due to its sugar content and avoid giving it to infants under one year old.
+                                                            </p>
+                                                        </div>
+                                                    </div>
                                                     <div class="entry-summary"></div>
                                                 </div>
                                             </div>
@@ -534,7 +483,8 @@
                             </div>
                         </div>
                     </section>
-                    <section id="subscribe" class="section subscribe-section" data-eltype="frontpagesection" style="background-image:url(images/19.jpg);">
+
+                    <section id="subscribe" class="section subscribe-section" data-eltype="frontpagesection" style="background-image:url(images/review_bg.jpg);">
                         <div class="boc-section">
                             <div class="section-inner">
                                 <div class="content-info-1">

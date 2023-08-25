@@ -2,6 +2,41 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+        .button-container {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .button {
+            margin-left: 125px;
+            margin-top: 11px;
+            margin-bottom: 11px;
+            border: none;
+            width: 186px;
+            height: 46px;
+            border-radius: 5px;
+            background: #000;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            display:inline-block;
+            font-size: 18px;
+            line-height: 46px;
+        }
+
+        .button:hover {
+            background-color: #333;
+        }
+
+        .button a {
+            color: #fff;
+            text-decoration: none;
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+        }
+	</style>
   <title>Registration system PHP and MySQL</title>
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -20,8 +55,8 @@
   		<label>Password</label>
   		<input type="password" name="password">
   	</div>
-  	<div class="input-group">
-  		<button type="submit" class="btn" name="login_user">Login</button>
+  	<div class="bitton-container">
+  		<button type="submit" class="button" name="login_user" target="_self">Login</button>
   	</div>
   	<p>
   		Not yet a member? <a href="register.php">Sign up</a>
