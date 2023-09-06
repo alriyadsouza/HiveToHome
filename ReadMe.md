@@ -62,6 +62,13 @@ The project uses a MySQL database to manage user information, honey types, inven
 - CSS (Styling)
 - JavaScript (UI enhancements)
 
+## Screenshots
+<p align='center'> <img src="https://github.com/alriyadsouza/HiveToHome/assets/109797633/b449e53b-0ab2-4746-ac16-d5b72aa2c0e2" width=250> <img src="https://github.com/alriyadsouza/HiveToHome/assets/109797633/82887746-bbf8-442b-b44a-c2605adc0325" width=250>    <img src="https://github.com/alriyadsouza/HiveToHome/assets/109797633/eef76703-8ae8-4c1c-b79c-47f10743e62f" width=250>    </p>
+<br>
+<p align='center'> <img src="https://github.com/alriyadsouza/HiveToHome/assets/109797633/ec271592-1499-4c43-a0e7-57d6934ae9f9" width=250> <img src="https://github.com/alriyadsouza/HiveToHome/assets/109797633/d76fd1ca-60fa-4404-ba1c-567a8337be76" width=250>  <img src="https://github.com/alriyadsouza/HiveToHome/assets/109797633/04ae12bf-40c6-4253-b399-579de0f60329" width=250>    </p>
+<br>
+<p align='center'> <img src="https://github.com/alriyadsouza/HiveToHome/assets/109797633/09016483-6d40-4c62-904a-8c7ef57b62c8" width=250> <img src="https://github.com/alriyadsouza/HiveToHome/assets/109797633/2d941819-8235-4273-a802-e0f384699e28" width=250>    <img src="https://github.com/alriyadsouza/HiveToHome/assets/109797633/7798d2de-2f93-419c-973c-e37c03a2d2ce" width=250></p>
+
 ## Contributors
 
 - [@alriyadsouza](https://github.com/alriyadsouza) - Alriya Treeza D Souza
